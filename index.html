@@ -85,6 +85,23 @@
 			a:hover, a:focus {
 				text-decoration: underline;
 			}
+			
+			a {
+				--gradientleft: rgb(37, 53, 81);
+				--gradientright: #0087ff;
+				color: inherit;
+				text-decoration: none;
+				background-position: 0 .2vh;
+				background-image: linear-gradient(to right,var(--gradientleft) 0,var(--gradientright) 100%);
+				background-repeat: no-repeat;
+				background-size: 0 100%;
+				box-shadow: inset 0em 1.1em var(--background);
+				transition: background .7s;
+			}
+
+			a:hover, a:focus {
+				background-size: 100% 100%;
+			}
 
 			#site-title, .header-title-text {
 				text-align: center
