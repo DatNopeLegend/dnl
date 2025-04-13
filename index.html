@@ -182,7 +182,10 @@
 			<p>Mastodon - <a rel="me" href="https://meow.social/@DatNopeLegend" target="_blank">@DatNopeLegend@meow.social</a></p>
 		</div>
 		<div class="footer">
-			<h4>&copy; 2024 nope.host</h4>
+			<h4>&copy; <span id="copyright-year"></span> nope.host</h4>
 		</div>
+		<script>
+			document.getElementById('copyright-year').textContent = new Date().getFullYear();
+		</script>
 	</body>
 </html>
